@@ -78,6 +78,12 @@
             <artifactId>activemq-core</artifactId>
             <version>5.3.1</version>
         </dependency>
+
+        <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-camel</artifactId>
+                <version>5.3.1</version>
+            </dependency>
     </dependencies>
 
 </project>

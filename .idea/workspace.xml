@@ -63,16 +63,16 @@
       <file leaf-file-name="collector.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/collector.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="114" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCamel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/TestCamel.java">
+      <file leaf-file-name="CamelRoutes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/CamelRoutes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+            <state line="26" column="43" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,10 +80,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camel.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="camel.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/camel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="24" selection-start="840" selection-end="840" vertical-scroll-proportion="0.19251336">
+            <state line="45" column="0" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCamelRoutes.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/TestCamelRoutes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="8" selection-start="252" selection-end="252" vertical-scroll-proportion="0.14438502">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collector.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/collector.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,7 +112,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="43" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
+            <state line="84" column="30" selection-start="3021" selection-end="3021" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,11 +134,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/resources/camel.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/META-INF/spring/collector.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/activemq.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/TestCamel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/spring/collector.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/TestCamel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/intelie/integration/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/net/intelie/integration/TestCamelRoutes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/CamelRoutes.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/collector.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/camel.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/net/intelie/integration/TestCamelRoutes.java" />
       </list>
     </option>
   </component>
@@ -259,6 +284,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -319,6 +366,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -328,6 +401,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
@@ -582,33 +656,56 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-spring/2.2.0/camel-spring-2.2.0-sources.jar!/org/apache/camel/spring/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="43" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
+        <state line="238" column="1" selection-start="8789" selection-end="8789" vertical-scroll-proportion="3.3208556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/TestCamel.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+        <state line="84" column="30" selection-start="3021" selection-end="3021" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/camel/CamelRoutes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="43" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/collector.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring/collector.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="114" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/camel.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="840" selection-end="840" vertical-scroll-proportion="0.19251336">
+        <state line="45" column="0" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/intelie/integration/TestCamelRoutes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="8" selection-start="252" selection-end="252" vertical-scroll-proportion="0.14438502">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

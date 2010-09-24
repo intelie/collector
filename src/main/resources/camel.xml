@@ -5,15 +5,27 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:camel="http://camel.apache.org/schema/spring"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-    <context:component-scan base-package="net.intelie.integration.camel"/>
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="ignoreResourceNotFound" value="true"/>
+        <property name="locations">
+            <list>
+                <value>classpath:collector.properties</value>
+            </list>
+        </property>
+    </bean>
 
+    <context:component-scan base-package="net.intelie.integration"/>
+    
     <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
-        <property name="brokerURL" value="failover:tcp://localhost:61616"/>
+        <property name="brokerURL" value="${activemq.url}"/>
         <property name="prefetchPolicy.queuePrefetch" value="500"/>
         <property name="useAsyncSend" value="true"/>
         <property name="dispatchAsync" value="true"/>
@@ -25,13 +37,17 @@
         </property>
     </bean>
 
-
     <camelContext id="collectorRoute" xmlns="http://camel.apache.org/schema/spring">
         <template id="camelTemplate"/>
         <route>
-            <from uri="jms:queue:events?concurrentConsumers=3"/>
-            <bean ref="testCamel" method="process"/>
+            <from uri="jms:queue:to-collector?concurrentConsumers=3"/>
+            <bean ref="camelRoutes" method="process"/>
         </route>
+
+        <!--<route>-->
+        <!--<from uri="jms:queue:events?concurrentConsumers=3"/>-->
+        <!--<to uri="jms:queue:test"/>-->
+        <!--</route>-->
     </camelContext>
 
 </beans>
